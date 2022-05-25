@@ -4,3 +4,6 @@
 [submodule "ironsight-api-handler"]
 	path = ironsight-api-handler
 	url = https://gitlab.rellis.dev/ironsight/ironsight-api-handler/
+[submodule "ironsight"]
+	path = ironsight
+	url = https://gitlab.rellis.dev/ironsight/ironsight.git
