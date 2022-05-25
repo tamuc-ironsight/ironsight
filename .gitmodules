@@ -1,3 +1,6 @@
 [submodule "ironsight-sql-db"]
 	path = ironsight-sql-db
 	url = https://gitlab.rellis.dev/ironsight/ironsight-sql-db.git
+[submodule "ironsight-api-handler"]
+	path = ironsight-api-handler
+	url = https://gitlab.rellis.dev/ironsight/ironsight-api-handler/
