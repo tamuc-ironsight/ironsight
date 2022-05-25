@@ -1,0 +1,24 @@
+version: '3.1'
+services:
+  ironsight-db:
+    image: mysql
+    container_name: ironsight-db
+    cap_add:
+      - SYS_NICE
+    ports: 
+      - 3306:3306
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_DATABASE: ironsight
+      MYSQL_USER: ironsight
+      MYSQL_PASSWORD: ironsight
+      MYSQL_RANDOM_ROOT_PASSWORD: "true"
+    volumes:
+      - ironsight-db-data:/var/lib/mysql
+      - ./ironsight-sql-db/ironsight_db.sql:/docker-entrypoint-initdb.d/dump.sql
+volumes:
+  ironsight-db-data:
+    external: true
+    name: ironsight-db-data
