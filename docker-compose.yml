@@ -18,7 +18,23 @@ services:
     volumes:
       - ironsight-db-data:/var/lib/mysql
       - ./ironsight-sql-db/ironsight_db.sql:/docker-entrypoint-initdb.d/dump.sql
+  ironsight-dashboard:
+    build:
+      context: ./ironsight
+      dockerfile: ./Dockerfile
+    container_name: ironsight-dashboard
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+  ironsight-api:
+    build:
+      context: ./ironsight-api-handler
+      dockerfile: ./Dockerfile
+    container_name: ironsight-api
+    restart: unless-stopped
+    ports:
+      - 80:80
+
 volumes:
   ironsight-db-data:
-    external: true
-    name: ironsight-db-data
+    driver: local
