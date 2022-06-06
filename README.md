@@ -13,7 +13,7 @@ IRONSIGHT_API_URL=https://IRONSIGHT_API_WEB_SERVER/ # External facing Ironsight 
 HARVESTER_URL=https://HAVESTER_INSTANCE/ # Harvester Web UI URL
 MYSQL_ROOT_PASSWORD=changeme # (Optional, recommend using MYSQL_RANDOM_ROOT_PASSWORD instead)
 MYSQL_RANDOM_ROOT_PASSWORD=yes
-MYSQL_DATABASE=ironsight # This must match the config.json file and the PHP scripts. Safer to keep it the same
+MYSQL_DATABASE=ironsight # This must match the PHP scripts. Safer to keep it the same
 MYSQL_USER=ironsight
 MYSQL_PASSWORD=ironsight
 ```
