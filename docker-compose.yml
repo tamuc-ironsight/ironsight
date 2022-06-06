@@ -5,8 +5,9 @@ services:
     container_name: ironsight-db
     cap_add:
       - SYS_NICE
-    ports: 
-      - 3306:3306
+    # Open SQL server to host for debugging
+    # ports: 
+    #   - 3306:3306
     command: --default-authentication-plugin=mysql_native_password
     restart: unless-stopped
     environment:
