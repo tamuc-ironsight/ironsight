@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   ironsight-db:
-    image: mysql
+    image: mariadb:latest
     container_name: ironsight-db
     cap_add:
       - SYS_NICE
@@ -38,3 +38,4 @@ services:
 volumes:
   ironsight-db-data:
     driver: local
+    name: ironsight-db-data
