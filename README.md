@@ -24,7 +24,6 @@ HARVESTER_API_TOKEN=token-#### # Harvester API generated token
 ELASTIC_FLEET_URL=https://ELASTIC_FLEET_URL # Ommit slash, bug needs fixing
 ELASTIC_FLEET_API_TOKEN=TOKEN_HERE
 ELASTIC_VERSION=8.1.2
-
 ELASTICSEARCH_URL=https://ELASTIC_URL/
 ELASTICSEARCH_API_TOKEN= # Elasticsearch token with reporting access
 
