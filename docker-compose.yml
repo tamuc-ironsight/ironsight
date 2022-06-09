@@ -20,7 +20,7 @@ services:
       - ./ironsight-sql-db/ironsight_db.sql:/docker-entrypoint-initdb.d/dump.sql
   ironsight-dashboard:
     build:
-      context: ./ironsight
+      context: ./ironsight-dashboard
       dockerfile: ./Dockerfile
     container_name: ironsight-dashboard
     restart: unless-stopped
