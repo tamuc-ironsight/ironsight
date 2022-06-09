@@ -22,6 +22,7 @@ services:
     build:
       context: ./ironsight-dashboard
       dockerfile: ./Dockerfile
+    image: ironsight-dashboard
     container_name: ironsight-dashboard
     restart: unless-stopped
     ports:
@@ -33,6 +34,7 @@ services:
     build:
       context: ./ironsight-api-handler
       dockerfile: ./Dockerfile
+    image: ironsight-api
     container_name: ironsight-api
     restart: unless-stopped
     ports:
