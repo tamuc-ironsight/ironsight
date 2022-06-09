@@ -7,3 +7,4 @@
 [submodule "ironsight-dashboard"]
 	path = ironsight-dashboard
 	url = git@gitlab.istar.dev:ironsight/ironsight-dashboard.git
+	branch = main
