@@ -4,6 +4,6 @@
 [submodule "ironsight-api-handler"]
 	path = ironsight-api-handler
 	url = git@gitlab.istar.dev:ironsight/ironsight-api-handler.git
-[submodule "ironsight"]
-	path = ironsight
-	url = git@gitlab.istar.dev:ironsight/ironsight.git
+[submodule "ironsight-dashboard"]
+	path = ironsight-dashboard
+	url = git@gitlab.istar.dev:ironsight/ironsight-dashboard.git
