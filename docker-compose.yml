@@ -28,8 +28,8 @@ services:
     ports:
       - 3000:3000
     environment:
-      REACT_APP_IRONSIGHT_API_URL: ${IRONSIGHT_API_URL}
-      REACT_APP_HARVESTER_URL: ${HARVESTER_URL}
+      VITE_IRONSIGHT_API_URL: ${IRONSIGHT_API_URL}
+      VITE_HARVESTER_URL: ${HARVESTER_URL}
   ironsight-api:
     build:
       context: ./ironsight-api-handler
