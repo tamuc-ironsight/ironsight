@@ -1,12 +1,12 @@
 [submodule "ironsight-sql-db"]
 	path = ironsight-sql-db
-	url = git@gitlab.istar.dev:ironsight/ironsight-sql-db.git
+	url = ../ironsight-sql-db.git
 	branch = main
 [submodule "ironsight-api-handler"]
 	path = ironsight-api-handler
-	url = git@gitlab.istar.dev:ironsight/ironsight-api-handler.git
+	url = ../ironsight-api-handler.git
 	branch = main
 [submodule "ironsight-dashboard"]
 	path = ironsight-dashboard
-	url = git@gitlab.istar.dev:ironsight/ironsight-dashboard.git
+	url = ../ironsight-dashboard.git
 	branch = main
